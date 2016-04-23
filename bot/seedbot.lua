@@ -226,101 +226,101 @@ function create_config( )
     "leave_ban",
     "admin"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {96700621},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
-An advance Administration bot based on yagop/telegram-bot 
-
-https://github.com/SEEDTEAM/TeleSeed
-
-Our team!
-Alphonse (@Iwals)
-I M /-\ N (@Imandaneshi)
-Siyanew (@Siyanew)
-Rondoozle (@Potus)
-Seyedan (@Seyedan25)
-
-Special thanks to:
-Juan Potato
-Siyanew
-Topkecleon
-Vamptacus
-
-Our channels:
-English: @TeleSeedCH
-Persian: @IranSeed
+    about_text = [[Teleseed v edited!
+    Edite by @Mr_Anti_Admin !
+    Or channel : @Notronx_ch !
+    pm report @member_fakebot !
+    
+   
 ]],
     help_text_realm = [[
-Realm Commands:
+🔆لیست دستورات ریلم شما😎👇🏻
 
 !creategroup [name]
-Create a group
-
+«ساخت گروه
+----
 !createrealm [name]
 Create a realm
-
+«ساخت ریلم
+----
 !setname [name]
 Set realm name
-
+«تنظیم نام
+----
 !setabout [group_id] [text]
 Set a group's about text
-
+«تنظیم موضوع
+----
 !setrules [grupo_id] [text]
 Set a group's rules
-
+«تنظیم قوانین
+----
 !lock [grupo_id] [setting]
 Lock a group's setting
-
+«قفل کردن گروه
+----
 !unlock [grupo_id] [setting]
 Unock a group's setting
-
+«بازکردن گروه
+----
 !wholist
 Get a list of members in group/realm
-
+«لیست اعضا
+----
 !who
 Get a file of members in group/realm
-
+«لیست اعضا به صورت فایل
+----
 !type
 Get group type
-
+«تنظیم پیام گروه
+----
 !kill chat [grupo_id]
 Kick all memebers and delete group
-
+«پاک کردن پت
+----
 !kill realm [realm_id]
 Kick all members and delete realm
-
+«پاک کردن ریلم
+----
 !addadmin [id|username]
 Promote an admin by id OR username *Sudo only
-
+«اضافه کردن ادمین به ربات
+----
 !removeadmin [id|username]
 Demote an admin by id OR username *Sudo only
-
+«حذف ادمین از ربات
+----
 !list groups
 Get a list of all groups
-
+«لیست گروه های ربات
+----
 !list realms
 Get a list of all realms
-
+«لیست ریلم های ربات
+----
 !log
 Get a logfile of current group or realm
-
+«آمار گروه
+----
 !broadcast [text]
-!broadcast Hello !
-Send text to all groups
-» Only sudo users can run this command
-
+«ارسال متن به تمامی گروه های ربات
+----
 !bc [group_id] [text]
 !bc 123456789 Hello !
 This command will send text to [group_id]
-
-» U can use both "/" and "!" 
-
-» Only mods, owner and admin can add bots in group
-
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-» Only owner can use res,setowner,promote,demote and log commands
+«ارسال متن به یک گروه
+➖➖➖➖➖
+«شما میتوانید از "/" و "!" استفاده کنید
+-------
+«سودو و ادمین ها میتوانند ربات رادرگروهی اد کنند!
+-------
+«صاحب گروه و مدیران او برگروه مدیریت میکنند!
+-------
+«صاحب گروه میتواند مذیر اضافه کند!
 
 ]],
     help_text = [[
