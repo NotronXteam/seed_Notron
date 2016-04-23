@@ -324,109 +324,116 @@ This command will send text to [group_id]
 
 ]],
     help_text = [[
-Commands list :
+🔆لیست دستورات گروه شما😎👇🏻
 
 !kick [username|id]
-You can also do it by reply
-
+«اخراج شخص از گروه
+----
 !ban [ username|id]
-You can also do it by reply
-
+«بن کردن شخص از گروه
+----
 !unban [id]
-You can also do it by reply
-
+«حذف بن کردن شخصی از گروه
+----
 !who
 Members list
-
+«دریافت لیست اعضا
+----
 !modlist
-Moderators list
-
+«لیست مدیران گروه
+----
 !promote [username]
-Promote someone
-
+«اضافه کردن مدیر
+----
 !demote [username]
-Demote someone
-
+«حذف مدیر
+----
 !kickme
-Will kick user
-
+«خروج از گروه
+----
 !about
-Group description
-
+«مشاهده موضوع گروه
+----
 !setphoto
-Set and locks group photo
-
+«تنظیم عکس گروه
+----
 !setname [name]
-Set group name
-
+«تنظیم نام گروه
+----
 !rules
 Group rules
-
+«مشاهده قوانین
+----
 !id
-Return group id or user id
-
-!help
-Get commands list
-
+«مشاهده ایدی گروه
+----
+!help fun
+«لیست دستورات تفریحی ربات
+----
 !lock [member|name|bots|leave] 
-Locks [member|name|bots|leaveing] 
-
+«قفل کردن هرکدام 
+----
 !unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
-
+«بازکردن هرکدام
+----
 !set rules [text]
-Set [text] as rules
-
+«تنظیم قوانین
+----
 !set about [text]
-Set [text] as about
-
+«تنظیم موضوع
+----
 !settings
-Returns group settings
-
+«تنظیمات گروه
+----
 !newlink
-Create/revoke your group link
-
+«ساخت لینک جدید
+----
 !link
-Returns group link
-
+«دریافت لینک
+----
 !owner
-Returns group owner id
-
+«مشاهده آیدی صاحب گروه
+----
 !setowner [id]
-Will set id as owner
-
+«تغییرصاحب گروه
+----
 !setflood [value]
-Set [value] as flood sensitivity
-
+«تنظیم حساسیت ضداسپم
+----
 !stats
-Simple message statistics
-
+«آمار
+----
 !save [value] [text]
-Save [text] as [value]
-
+«ذخیره پیام
+----
 !get [value]
-Returns text of [value]
-
+«پرش به رویدادی
+----
 !clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
+«پاک کردن هریک از اینها
+----
 !res [username]
-Returns user id
-
+«مشاهده ایدی فرد
+----
 !log
-Will return group logs
-
+«آمار گروه
+----
 !banlist
-Will return group ban list
+«لیست بن شده های گپ
+➖➖➖
+«میتوانید از "!" و "/" استفاده کنید
+---------
+«سودو و ادمین ها میتوانند ربات را به گروهیی ببرند
+---------
+«صاحب گروه و مدیران بر گپ نظارت میکنند
+---------
+«صاحب گروه میتواند مدیر اضافه کند.
 
-» U can use both "/" and "!" 
-
-» Only mods, owner and admin can add bots in group
-
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-» Only owner can use res,setowner,promote,demote and log commands
-
+🔆چنل @Notronx_ch
+🔆ساخته شده توسط @Mr_Anti_Admin 
+🔆سورس اپن میباشد و قابل استفاده عموم است.
+🔆لینک سورس👇🏻
+https://github.com/NotronXteam/seed_Notron
 ]]
   }
   serialize_to_file(config, './data/config.lua')
