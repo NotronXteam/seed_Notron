@@ -232,83 +232,83 @@ local function lock_group_arabic(msg, data, target)
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'yes' then
-    return 'Arabic is already locked'
+    return 'صحبت به زبان فارسی از قبل قفل بود1'
   else
     data[tostring(target)]['settings']['lock_arabic'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'Arabic has been locked'
+    return 'صحبت به زبان فارسی قفل شد!!!جرات داری فارسی بحرف'
   end
 end
 
 local function unlock_group_arabic(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "نیازمند دسترسی مدیر!"
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'no' then
-    return 'Arabic is already unlocked'
+    return 'صحبت به زبان فارسی آزاد شد'
   else
     data[tostring(target)]['settings']['lock_arabic'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Arabic has been unlocked'
+    return 'صحبت به زبان فارسی آزاد شد'
   end
 end
 
 local function lock_group_bots(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "نیازمند دسترسی مدیر"
   end
   local group_bots_lock = data[tostring(target)]['settings']['lock_bots']
   if group_bots_lock == 'yes' then
-    return 'Bots protection is already enabled'
+    return 'آوردن ربات ممنوع بود!'
   else
     data[tostring(target)]['settings']['lock_bots'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'Bots protection has been enabled'
+    return 'آوردن ربات ممنوع شد!'
   end
 end
 
 local function unlock_group_bots(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "نیازمند دسترسی مدیر!"
   end
   local group_bots_lock = data[tostring(target)]['settings']['lock_bots']
   if group_bots_lock == 'no' then
-    return 'Bots protection is already disabled'
+    return 'آوردن ربات ممنوع شد'
   else
     data[tostring(target)]['settings']['lock_bots'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Bots protection has been disabled'
+    return 'آوردن ربات باز شد'
   end
 end
 
 local function lock_group_namemod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "نیازمند دسترسی مدیر"
   end
   local group_name_set = data[tostring(target)]['settings']['set_name']
   local group_name_lock = data[tostring(target)]['settings']['lock_name']
   if group_name_lock == 'yes' then
-    return 'Group name is already locked'
+    return 'نام گروه قفل بود'
   else
     data[tostring(target)]['settings']['lock_name'] = 'yes'
     save_data(_config.moderation.data, data)
     rename_chat('chat#id'..target, group_name_set, ok_cb, false)
-    return 'Group name has been locked'
+    return 'نام گروه قفل شد'
   end
 end
 local function unlock_group_namemod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "نیازمند دسترسی مدیر"
   end
   local group_name_set = data[tostring(target)]['settings']['set_name']
   local group_name_lock = data[tostring(target)]['settings']['lock_name']
   if group_name_lock == 'no' then
-    return 'Group name is already unlocked'
+    return 'نام گروه آزاد شد'
   else
     data[tostring(target)]['settings']['lock_name'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Group name has been unlocked'
+    return 'نام گروه آزاد شد'
   end
 end
 local function lock_group_floodmod(msg, data, target)
@@ -317,11 +317,11 @@ local function lock_group_floodmod(msg, data, target)
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'yes' then
-    return 'Group flood is locked'
+    return 'اسپم در گروه قفل شد'
   else
     data[tostring(target)]['settings']['flood'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'Group flood has been locked'
+    return 'اسپم درگروه قفل شد'
   end
 end
 
@@ -331,74 +331,74 @@ local function unlock_group_floodmod(msg, data, target)
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'no' then
-    return 'Group flood is not locked'
+    return 'اسپم در گروه قفل نیست'
   else
     data[tostring(target)]['settings']['flood'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Group flood has been unlocked'
+    return 'اسپم در گروه آزاد شد'
   end
 end
 
 local function lock_group_membermod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "نیازمند دسترسی مدیر"
   end
   local group_member_lock = data[tostring(target)]['settings']['lock_member']
   if group_member_lock == 'yes' then
-    return 'Group members are already locked'
+    return 'آوردن عضو قفل بود'
   else
     data[tostring(target)]['settings']['lock_member'] = 'yes'
     save_data(_config.moderation.data, data)
   end
-  return 'Group members has been locked'
+  return 'آوردن عضو قفل شد'
 end
 
 local function unlock_group_membermod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "نیازمند دسترسی مدیر"
   end
   local group_member_lock = data[tostring(target)]['settings']['lock_member']
   if group_member_lock == 'no' then
-    return 'Group members are not locked'
+    return 'آوردن عضو قفل نبود'
   else
     data[tostring(target)]['settings']['lock_member'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Group members has been unlocked'
+    return 'آوردن عضو آزاد شد'
   end
 end
 
 
 local function set_public_membermod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "نیازمند دسترسی مدیر"
   end
   local group_member_lock = data[tostring(target)]['settings']['public']
   if group_member_lock == 'yes' then
-    return 'Group is already public'
+    return 'گروه شما از قبل یم گروه عمومی بود'
   else
     data[tostring(target)]['settings']['public'] = 'yes'
     save_data(_config.moderation.data, data)
   end
-  return 'Group is now: public'
+  return 'گروه شما یک گروه عمومی است'
 end
 
 local function unset_public_membermod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "نیازمند دسترسی مدیر"
   end
   local group_member_lock = data[tostring(target)]['settings']['public']
   if group_member_lock == 'no' then
-    return 'Group is not public'
+    return 'گروه عمومی نیست'
   else
     data[tostring(target)]['settings']['public'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Group is now: not public'
+    return 'وضعیت گروه = خصوصی'
   end
 end
 
 local function lock_group_leave(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "نیازمند  دسترسی مدیر"
   end
   local leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
   if leave_ban == 'yes' then
